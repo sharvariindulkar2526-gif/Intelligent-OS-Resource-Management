@@ -1,0 +1,40 @@
+========================================
+FINTECH OPS CONFIGURATION LOG
+========================================
+
+Task:
+Secure Multi-User Environment
+
+Group:
+fintech_ops
+
+Shared Deployment Directory:
+/opt/fintech-deployment
+
+Required Directory Permissions:
+2775
+
+Permission Meaning:
+Owner - Read, Write, Execute
+Group - Read, Write, Execute
+Others - Read, Execute
+
+Setgid:
+Enabled
+
+Restricted Sudo Commands:
+
+1. systemctl start fintech-app.service
+2. systemctl stop fintech-app.service
+3. systemctl restart fintech-app.service
+4. systemctl status fintech-app.service
+
+Sudo Configuration File:
+/etc/sudoers.d/fintech_ops
+
+Sudo Access:
+Restricted to specified service-management commands.
+
+========================================
+END OF CONFIGURATION LOG
+========================================
