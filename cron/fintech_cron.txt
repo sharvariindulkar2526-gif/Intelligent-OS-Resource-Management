@@ -1,0 +1,2 @@
+# Run system monitoring every weekday at midnight
+0 0 * * 1-5 /home/student/system_monitor.sh >> /home/student/fintech_cron.log 2>&1
